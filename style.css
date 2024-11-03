@@ -1,0 +1,788 @@
+body {
+    background-color: rgb(20, 20, 20);
+    background-size: contain;
+    background-attachment: fixed;
+    font-family: fantasy;
+    height: 100vh;
+    
+}
+
+body {
+    background-image: url();
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 65px;
+    position: fixed;
+    margin-top: 0px;
+    text-align: center;
+    align-items: center;
+    border-bottom: 1px solid rgb(75, 75, 75);
+}
+
+header h1 {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+
+nav {
+    background-color: rgb(20, 20, 20);
+    color: white;
+    width: 15%;
+    height: 700px;
+    position: fixed;
+    margin-top: 65px;
+    border-right: 1px solid rgb(75, 75, 75);
+    margin-left: -23px;
+    z-index: 1;
+}
+
+nav ul {
+
+    width: 100%;
+    list-style: none
+}
+
+nav ul li {
+    width: 95%;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin-top: 5px;
+    border-radius: 10px;
+    border: 1px solid black;
+    display: flex;
+    padding-left: 10px;
+    align-items: center;
+    font-size: 20px;
+    justify-content: start;
+}
+
+nav ul li img {
+    width: 30px;
+}
+
+nav ul li .title {
+    margin-left: 10px;
+}
+
+nav ul li:hover {
+    background-color: rgb(255, 255, 255, 0.7);
+    border: 1px solid white;
+    color: #000;
+}
+
+#main {
+    position: fixed;
+    margin-left: 13.5%;
+    margin-top: 67px;
+    width: 86.5%;
+    height: 100%;
+    overflow: scroll;
+    text-align: center;
+    background-color: rgb(20, 20, 20);
+}
+main::-webkit-scrollbar {
+    width: 0;
+}
+#blur {
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    filter: blur(6px);
+}
+.section {
+    border-radius: 30px;
+
+    width: 95%;
+    margin-top: 20px;
+    margin-left: 2.5%;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.article {
+    background-color: rgb(241, 241, 241, 0.5);
+    width: 260px;
+    height: 250px;
+    margin-left: 5px;
+    text-align: center;
+    border-radius: 5px 20px 5px 20px;
+}
+.article:hover {
+    box-shadow: 0px 12px 25px rgb(52, 52, 52);
+}
+
+.article img {
+    width: 200px;
+    height: 140px;
+    margin-top: 10px;
+    border-radius: 20px;
+
+}
+
+.article:hover img {
+
+    box-shadow: 0px 12px 25px rgb(52, 52, 52);
+}
+
+
+section {
+    margin-bottom: 0px;
+}
+
+audio {
+    opacity: 0.5;
+    border-radius: 0px 0px 2px 20px;
+    width: 90%;
+    height: 50px;
+    margin-top: 10px;
+}
+
+audio::-webkit-media-controls-panel {
+    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgb(185, 185, 185);
+}
+
+h5 {
+    margin-top: 7px;
+    color: rgb(12, 12, 12);
+}
+
+.article:hover h5 {
+    color: rgb(255, 255, 255);
+}
+
+#footeraudio{
+    position: fixed;
+    text-align: center;
+    bottom: 0;
+    background-color: rgba(87, 87, 87, 0.71);
+    width: 86.5%;
+    height: 70px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+#footeraudio div{
+    width: 80%;
+    position: absolute;
+    left:10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.bars {
+    align-items: flex-end;
+    justify-content: center;
+    display: flex;
+    gap: 0.25rem;
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-right: 20px;
+    margin-bottom: 5px;
+    z-index: 1;
+}
+.bars__item {
+    animation: play 1s ease-out infinite;
+    background-image: linear-gradient(to top, rgb(108, 108, 108), rgb(255, 255, 255));
+    height: 100%;
+    width: 0.5rem;
+}
+.bars__item:nth-child(1) {
+    animation-delay: 0s;
+}
+.bars__item:nth-child(2) {
+    animation-delay: 0.5s;
+}
+.bars__item:nth-child(3) {
+    animation-delay: 0.2s;
+}
+.bars__item:nth-child(4) {
+    animation-delay: 0.75s;
+}
+
+@keyframes play {
+    0% {
+        height: 10%;
+    }
+
+    25% {
+        height: 75%;
+    }
+
+    50% {
+        height: 50%;
+    }
+
+    75% {
+        height: 100%;
+    }
+
+    100% {
+        height: 10%;
+    }
+}
+
+
+@media screen and (max-width:922px) {
+    header form input {
+        width: 200px;
+    }
+
+    header form button {
+        width: 60px;
+    }
+
+    header .icon button {
+        width: 62px;
+    }
+}
+
+@media screen and (max-width:646px) {
+    header form input {
+        width: 150px;
+    }
+
+    header form button {
+        width: 60px;
+    }
+
+    header .icon button {
+        width: 62px;
+    }
+}
+
+@media screen and (max-width:596px) {
+
+    header form button {
+        width: 50px;
+        height: 50px;
+    }
+
+    header .icon button {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+
+#mainkoran {
+    background-color: rgb(20, 20, 20);
+    position: fixed;
+    margin-top: 65px;
+    margin-left: 13.5%;
+    width: 86.5%;
+    height: 1000px;
+    overflow: scroll;
+}
+
+
+
+#mainkoran {
+    background-image: url(https://i.pinimg.com/564x/7f/55/67/7f5567778ca8643b5ff7c218d4b79d4a.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1000px;
+    padding-bottom: 400px;
+
+}
+
+#mainkoran svg {
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8));
+    width: 30%;
+    height: 150px;
+    position: relative;
+    left: 35%;
+    right: 50%;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+#mainkoran section {
+    display: block;
+    text-align: center;
+    padding: 30px;
+    width: 70%;
+    height: auto;
+    border: 2px solid white;
+    border-radius: 20px;
+    margin-left: 15%;
+    color: white;
+}
+
+#mainkoran select {
+    text-align: center;
+    
+}
+#mainkoran select::-webkit-scrollbar {
+    width: 0;
+}
+
+#mainkoran section div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#mainkoran audio {
+    background-color: rgb(193, 193, 193);
+    border-radius: 5px;
+    height: 60px;
+}
+#mainkoran audio::-webkit-media-controls-panel {
+    
+    background-color: rgb(193, 193, 193);
+}
+
+.select {
+    margin-bottom: 20px;
+}
+
+.select h2 {
+    font-size: 20px;
+}
+
+.select select {
+    font-size: 25px;
+    width: 80%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    height: 50px;
+}
+
+/* Style for the select elements when focused */
+select:focus {
+    outline: none;
+    border-color: #000000;
+    box-shadow: 0 5px 20px rgba(255, 255, 255, 0.25);
+}
+
+.mainmoshaf {
+    direction: rtl;
+    position: fixed;
+    margin-top: 65px;
+    margin-left: 13.5%;
+    width: 86.5%;
+    height: 1000px;
+    overflow: auto;
+    text-align: center;
+    background-color: rgb(20, 20, 20);
+}
+.mainmoshaf img {
+    width: 50%;
+    z-index: 1;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}    
+.moshafe {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 95%;
+    height: 100vh;
+    margin-left: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    position: absolute;
+    padding: 10px;
+    justify-content: center;
+}
+
+.suraName {
+    color: white;
+    width: 150px;
+    height: 100px;
+    border-radius: 20px;
+    border: 2px solid rgb(255, 255, 255);
+    display: block;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    z-index: 1;
+}
+
+.suraName:hover {
+    color: rgb(59, 162, 180);
+    border: 2px solid rgb(59, 162, 180);
+}
+
+.suraName .p{
+    margin-top: 10px;
+}
+.popup-moshafe {
+    z-index: 2;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin-left: 13.5%;
+    margin-top: 65px;
+    width: 86.5%;
+    padding: 100px;
+    height: 100%;
+    overflow: scroll;
+    text-align: center;
+    background-color: rgb(20, 20, 20);
+    color: white;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    transform: translateX(120%);
+    margin-bottom: 100px;
+    padding: 20px;
+    direction: rtl;
+}
+.popup-moshafe::-webkit-scrollbar {
+    width: 0;
+}
+.popup-moshafe.active {
+    transform: translateX(0);
+}
+
+.close-popup {
+    position: sticky;
+    top: 5px;
+    left: 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 2px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    background-color: brown;
+    z-index: 1;
+    padding-bottom: 8px;
+}
+
+.popup-moshafe .ayah {
+    padding: 0px;
+    width: 60%;
+    margin-right: 20%;
+    margin-bottom: 300px;
+}
+
+.foter{
+    width: 100%;
+    height:350px;
+}
+
+.mainLive{
+    position: fixed;
+    margin-top: 65px;
+    margin-left: 13.5%;
+    width: 86.5%;
+    height: 100vh;
+    overflow: scroll;
+    text-align: center;
+    background-color: rgb(20, 20, 20);
+}
+.mainLive h1{
+    font-size: 30px;
+    margin-top: 20px;
+    color: white;
+}
+.mainLive section .article1{
+    margin-top: 20px;
+}
+.mainLive section .article1 button{
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid white;
+    width: 150px;
+    height: 60px;
+    color: white;
+    background-color: rgb(8, 108, 39);
+    font-size: 25px;
+}
+.mainLive section .article2 iframe{
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 1px solid white;
+    width: 80%;
+}
+
+
+.mainsalat {
+    position: fixed;
+    margin-top: 65px;
+    margin-left: 13.5%;
+    width: 86.5%;
+    height: 1000px;
+    overflow: scroll;
+    background-color: rgb(20, 20, 20);
+}
+.salat {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 20px;
+    text-align: center;
+}
+.listsalat{
+    width: 100%;
+    padding: 10px;
+    display: block;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, rgb(217, 164, 95), rgb(130, 128, 107));
+
+}
+.listsalat li{
+    width: 100%;
+    height: 80px;
+    list-style: none;
+    margin-left: -15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    border-radius: 10px;
+    font-size: 23px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.listsalat img{
+    width: 40px;
+    height: 40px;
+    margin-bottom: 5px;
+    margin-right: 10px;
+}
+
+
+.selectpaye input{
+    height: 50px;
+    width: 90%;
+    padding-left: 10px;
+    border-radius: 10px;
+    border: 1px solid;
+    color: rgb(0, 0, 0);
+    margin-bottom: 10px;
+}
+.selectpaye button{
+    height: 50px;
+    width: 20%;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid;
+    color: white;
+    background-color: rgb(8, 108, 39);
+    margin-bottom: 10px;
+}
+
+
+
+
+@media screen and (max-width:1530px) {
+    .korankarim article {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width:988px) {
+    .korankarim article {
+        width: 45%;
+
+    }
+}
+
+@media screen and (max-width:624px) {
+    .korankarim article {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:1282px) {
+    .bars {
+        margin-bottom: 84px;
+    }
+    nav {
+        background-color: rgb(20, 20, 20);
+        border-top: 1px solid rgb(139, 139, 139);
+        width: 100%;
+        height: 75px;
+        position: fixed;
+
+        bottom: 0;
+        display: flex;
+        
+        z-index: 1;
+        margin-left: 0px;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-left: -3%;
+    }
+
+    nav ul li {
+        width: 15%;
+        height: 50px;
+        margin-top: 20px;
+        text-align: center;
+        padding-left: 0px;
+        justify-content: center;
+    }
+
+    nav ul li .title {
+        display: none;
+    }
+    #footeraudio{
+        margin-bottom: 75px;
+    }
+    #main {
+        position: fixed;
+        margin-left: 0%;
+        margin-top: 67px;
+        width: 100%;
+        height: 100%;
+        overflow: scroll;
+        text-align: center;
+    }
+    .popup-moshafe {
+        margin-right: 2.5%;
+        width: 95%;
+        
+    }
+    #footeraudio{
+        width: 100%;
+    }
+    .mainmoshaf {
+        position: fixed;
+        margin-left: 0%;
+        margin-top: 67px;
+        width: 100%;
+        height: 100%;
+        overflow: scroll;
+        text-align: center;
+        padding-bottom: 300px;
+    }
+    .mainLive{
+        width: 100%;
+        margin-left: 0%;
+        
+    }
+    .mainsalat {
+        width: 100%;
+        margin-left: 0%;
+    }
+    .main2 {
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    #mainkoran {
+        position: fixed;
+        margin-left: 0%;
+        margin-top: 67px;
+        width: 100%;
+        height: 100%;
+
+    }
+}
+
+@media screen and (max-width:660px) {
+
+    header img {
+        margin-left: 3px;
+        margin-right: auto;
+
+    }
+
+    header form {
+        position: absolute;
+        right: 70px;
+    }
+
+    header form input {
+        display: none;
+    }
+
+
+
+    header form button {
+        display: none;
+    }
+
+    nav ul li img {
+        width: 25px;
+    }
+    
+
+    .article {
+        background-color: rgb(255, 255, 255, 0.2);
+        width: 150px;
+        height: 165px;
+        display: block;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        border-radius: 10px;
+    }
+
+
+    .article img {
+        margin-top: 10px;
+        width: 120px;
+        height: 120px;
+        border-radius: 10px;
+        box-shadow: 0px 10px 30px black;
+        z-index: 1;
+    }
+
+    .article audio {
+
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;
+        opacity: 1;
+        display: none;
+        margin-top: -103px;
+        margin-left: -25px;
+    }
+
+    h5 {
+        margin-top: 7px;
+        font-size: 12px;
+    }
+
+    #mainkoran section {
+        padding: 10px;
+        width: 98%;
+        height: auto;
+        border-radius: 15px;
+        margin-left: 1%;
+    }
+
+    #mainkoran section audio {
+
+        width: 100%;
+
+    }
+
+    select {
+        font-size: 17px;
+    }
+    .popup-moshafe .ayah {
+        padding: 0px;
+        width: 100%;
+        margin-right: 0%;
+    }
+}
